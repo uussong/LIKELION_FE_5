@@ -10,7 +10,8 @@ h2,
 h3,
 p,
 ul,
-li {
+li,
+button {
 	margin: 0;
 	padding: 0;
 }
@@ -31,9 +32,18 @@ ul, li {
 	list-style: none;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 
 .section {
 	padding: 100px 0;
+}
+
+.section1 {
+	background-color: seashell;
 }
 
 .section2 {
@@ -56,11 +66,22 @@ ul, li {
 	align-items: center;
 }
 
-.title h1{
+.section1 .title {
+	justify-content: space-between;
+}
+
+.title h1 {
 	flex-shrink: 0;
+	font-size: 40px;
+}
+
+.section1 .title h1 {
+	flex-basis: 33%;
+}
+
+.section2 .title h1{
 	flex-basis: 26%;
 	color: #fff;
-	font-size: 40px;
 }
 
 .title strong {
@@ -98,7 +119,17 @@ ul, li {
 
 /* contents */
 
-.card {
+.section1 .section-contents {
+	display: flex;
+	gap: 24px;
+}
+
+.section1 .card {
+	flex-basis: 33%;
+	flex-shrink: 0;
+}
+
+.section2 .card {
 	display: flex;
 	margin-bottom: 24px;
 }
@@ -111,20 +142,20 @@ ul, li {
 	flex-direction: row-reverse;
 }
 
-.card-title {
+.card-cover {
 	flex-basis: 26%;
 	flex-shrink: 0;
 	position: relative;
 }
 
 
-.card-title img {
+.card-cover img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.card-title h2 {
+.card-cover h2 {
 	position: absolute;
 	inset: 0;
 	color: #fff;
