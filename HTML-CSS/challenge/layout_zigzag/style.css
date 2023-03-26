@@ -86,6 +86,7 @@ a {
 
 .section1 .title h1 {
 	flex-basis: 33%;
+	flex-shrink: 0;
 	color: salmon;
 }
 
@@ -286,4 +287,25 @@ a {
 	background-color: #bd8fe8;
 	border-radius: 50%;
 	margin-right: 10px;
+}
+
+
+/* 반응형 */
+
+@media (max-width: 1080px) {
+	.section1 .section-contents{
+		flex-direction: column;
+	}
+	.section1 .title h1{
+		flex-basis: 70%;
+		flex-shrink: 0;
+	}
+
+	.section2 .card {
+		flex-direction: column;
+	}
+
+	.section2 .card:nth-child(even) {
+		flex-direction: column;
+	}
 }
