@@ -292,10 +292,16 @@ a {
 
 /* 반응형 */
 
-@media (max-width: 1080px) {
-	.section1 .section-contents{
-		flex-direction: column;
+@media (max-width: 1200px) {
+	.section .wrapper {
+		width: 70%;
 	}
+	.section-contents {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.section1 .title h1{
 		flex-basis: 70%;
 		flex-shrink: 0;
@@ -307,5 +313,13 @@ a {
 
 	.section2 .card:nth-child(even) {
 		flex-direction: column;
+	}
+
+	.card {
+		width: 500px;
+	}
+	.card-cover img {
+		aspect-ratio: 3 / 1;
+		width: 500px;
 	}
 }
