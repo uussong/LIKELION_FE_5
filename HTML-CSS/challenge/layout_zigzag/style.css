@@ -223,8 +223,26 @@ a {
 	margin: 24px auto 32px;
 }
 
+.section1 .card-content h2 {
+	min-height: 58px;
+}
+
+.title-ellipsis {
+  overflow:hidden;  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .card-content p {
 	font-size: 14px;
+}
+
+.content-ellipsis {
+  overflow:hidden;  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
 }
 
 .card-footer {
@@ -305,6 +323,10 @@ a {
 	.section1 .title h1{
 		flex-basis: 70%;
 		flex-shrink: 0;
+	}
+
+	.section1 .card-content h2 {
+		min-height: 30px;
 	}
 
 	.section2 .card {
