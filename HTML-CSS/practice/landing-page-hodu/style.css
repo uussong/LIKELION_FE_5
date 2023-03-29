@@ -1,0 +1,25 @@
+header {
+  box-shadow: inset 0 0 5px red;
+}
+section {
+  box-shadow: inset 0 0 5px gold;
+}
+footer {
+  box-shadow: inset 0 0 5px green;
+}
+
+.l_wrapper {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .list {
+  display: flex;
+}
