@@ -1,6 +1,35 @@
-header {
-  box-shadow: inset 0 0 5px red;
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+* { 
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
 }
+
+/* reset */
+body,
+header,
+section,
+footer,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
 section {
   box-shadow: inset 0 0 5px gold;
 }
@@ -13,13 +42,39 @@ footer {
 }
 
 .navbar {
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #f2e9d8;
+}
+
+.navbar .title {
+  padding: 31px 0;
+}
+
+.navbar .title-logo{
+  aspect-ratio: 130 / 40;
+  width: 130px;
 }
 
 .navbar .menu {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .navbar .list {
   display: flex;
+  gap: 30px;
+}
+
+.navbar .list li {
+  font-size: 16px;
+}
+
+.navbar .menu .btn-download {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #d97652;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 40px;
 }
