@@ -37,40 +37,43 @@ footer {
   box-shadow: inset 0 0 5px green;
 }
 
+.header {
+  background-color: #f2e9d8;
+}
+
 .l_wrapper {
   display: flex;
 }
 
 .navbar {
   justify-content: space-around;
-  background-color: #f2e9d8;
 }
 
-.navbar .title {
+.title {
   padding: 31px 0;
 }
 
-.navbar .title-logo{
+.title-logo{
   aspect-ratio: 130 / 40;
   width: 130px;
 }
 
-.navbar .menu {
+.menu {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.navbar .list {
+.list {
   display: flex;
   gap: 30px;
 }
 
-.navbar .list li {
+.list li {
   font-size: 16px;
 }
 
-.navbar .menu .btn-download {
+.menu .btn-download {
   font-size: 16px;
   font-weight: 700;
   background-color: #d97652;
