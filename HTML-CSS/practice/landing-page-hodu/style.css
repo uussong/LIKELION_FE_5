@@ -50,10 +50,6 @@ fieldset {
   width: 100%;
 }
 
-footer {
-  box-shadow: inset 0 0 5px green;
-}
-
 /* header */
 
 .header {
@@ -251,4 +247,31 @@ footer {
 }
 
 .section_from form .btn {
+}
+
+/* footer */
+footer .l_wrapper{
+  justify-content: space-between;
+}
+
+footer h2 img {
+  aspect-ratio: 226 / 70;
+  width: 226px;
+  padding: 45px 0;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #f29d52;
+  border-radius: 50px;
 }
