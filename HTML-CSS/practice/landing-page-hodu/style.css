@@ -120,7 +120,7 @@ fieldset {
 .section_main img {
   position: absolute;
   bottom: -124px;
-  right: 320px;
+  right: 10%;
   aspect-ratio: 415 / 890;
   width: 415px;
 }
