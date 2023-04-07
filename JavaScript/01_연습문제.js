@@ -80,12 +80,24 @@ console.log(sum)
 
 // --- 풀이 ---
 // [4-1]
-// let num = parseInt(window.prompt('숫자를 입력해주세요'))
-let num = 1000
-for (const i of num) {
-  console.log(i)
+let num = 1000000
+num = num.toString()
+for (let i = num.length - 3; i > 0; i -= 3) {
+  num = num.slice(0, i) + ',' + num.slice(i)
 }
 
+// [4-2]
+let num = '1,000,000'
+for (let i = num.length - 4; i > 0; i -= 4) {
+  num = num.slice(0, i) + num.slice(i+1)
+}
+
+// [4-3]
+const str = 'hello world'
+let result = ''
+for (const i of str) {
+  result = i + result
+}
 
 /* 💡 연습문제 5번
 
