@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color picker</title>
+  <style>
+    * {
+      margin: 0 auto;
+    }
+
+    div {
+      width: 500px;
+      height: 500px;
+      background-color: black;
+      margin-bottom: 50px;
+    }
+
+    ul,
+    li {
+      padding: 0;
+    }
+
+    ul {
+      width: 500px;
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+    }
+
+    .red {
+      background-color: crimson;
+    }
+
+    .yellow {
+      background-color: gold;
+    }
+
+    .green {
+      background-color: seagreen;
+    }
+
+    [class^="btn-"] {
+      width: 50px;
+      height: 50px;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .btn-red {
+      background-color: crimson;
+    }
+
+    .btn-yellow {
+      background-color: gold;
+    }
+
+    .btn-green {
+      background-color: seagreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <ul class="buttons">
+    <li><button class="btn-red">빨강</button></li>
+    <li><button class="btn-yellow">노랑</button></li>
+    <li><button class="btn-green">초록</button></li>
+  </ul>
+  <!-- JavaScript -->
+  <script>
+    const box = document.querySelector('div')
+    const buttons = document.querySelector('.buttons')
+    // const btnRed = buttons.querySelectorAll('button')[0]
+    const btnRed = buttons.querySelector('.btn-red')
+    // const btnYellow = buttons.querySelectorAll('button')[1]
+    const btnYellow = buttons.querySelector('.btn-yellow')
+    // const btnGreen = buttons.querySelectorAll('button')[2]
+    const btnGreen = buttons.querySelector('.btn-green')
+
+    btnRed.addEventListener('click', () => {
+      box.classList.add('red')
+      if (box.classList.contains('yellow')) {
+        box.classList.remove('yellow')
+      } else if (box.classList.contains('green')) {
+        box.classList.remove('green')
+      }
+    })
+    btnYellow.addEventListener('click', () => {
+      box.classList.add('yellow')
+      if (box.classList.contains('red')) {
+        box.classList.remove('red')
+      } else if (box.classList.contains('green')) {
+        box.classList.remove('green')
+      }
+    })
+    btnGreen.addEventListener('click', () => {
+      box.classList.add('green')
+      if (box.classList.contains('red')) {
+        box.classList.remove('red')
+      } else if (box.classList.contains('yellow')) {
+        box.classList.remove('yellow')
+      }
+    })
+
+  </script>
+</body>
+
+</html>
