@@ -34,3 +34,12 @@ function runTimer() {
 
 btnStart.addEventListener('click', runTimer)
 
+
+// 타이머 초기화
+function resetTimer() {
+  hour.value = '00'
+  minute.value = '00'
+  second.value = '00'
+}
+
+btnReset.addEventListener('click', resetTimer)
