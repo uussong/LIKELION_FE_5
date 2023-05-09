@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIMER</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="./img/weniv-logo.png" alt="위니브">
+    </h1>
+  </header>
+  <main class="timer">
+    <section>
+      <h2>TIMER</h2>
+      <div class="division"></div>
+      <form class="timer-input">
+        <fieldset>
+          <label for="hour">HRS</label>
+          <input id="hour" type="number" min="0" value="00">
+        </fieldset>
+        <!-- <img class="dot" src="./img/dot.png" alt=""> -->
+        <fieldset>
+          <label for="minute">MIN</label>
+          <input id="minute" type="number" min="0" max="59" value="00">
+        </fieldset>
+        <fieldset>
+          <label for="second">SEC</label>
+          <input id="second" type="number" min="0" max="59" value="00">
+        </fieldset>
+      </form>
+      <div class="timer-button-group">
+        <button class="timer-button" type="button">
+          <img src="./img/icon-start-disabled.png" alt="시작">
+          START
+        </button>
+        <button class="timer-button" type="button">
+          <img src="./img/icon-reset-disabled.png" alt="처음으로">
+          RESET
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <cite>ⓒ WENIV Corp.</cite>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./timer.js"></script>
+</body>
+
+</html>
