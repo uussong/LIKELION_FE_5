@@ -22,9 +22,15 @@ second.addEventListener('keypress', startTimer)
 // 타이머 동작 
 function runTimer() {
   // START -> PAUSE
-  btnStart.querySelector('img').src = './img/icon-stop.png'
-  btnStart.style.backgroundColor = '#15C2B8'
-  btnStart.innerHTML = `<img src='./img/icon-stop.png' alt="일시 정지"> PAUSE`
+  if (btnStart.textContent.trim() === 'START') {
+    btnStart.style.backgroundColor = '#15C2B8'
+    btnStart.innerHTML = `<img src='./img/icon-stop.png' alt="일시 정지"> PAUSE`
+  // PAUSE -> START
+  } else {
+    btnStart.style.backgroundColor = '#5180FF'
+    btnStart.innerHTML = `<img src="./img/icon-start.png" alt="시작"> START`
+  }
 }
 
 btnStart.addEventListener('click', runTimer)
+
