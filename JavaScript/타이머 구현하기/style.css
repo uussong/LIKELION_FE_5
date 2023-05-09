@@ -46,6 +46,9 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+button {
+  cursor: pointer;
+}
 
 /* 공통 ------------------ */
 
