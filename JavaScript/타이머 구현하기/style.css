@@ -1,0 +1,143 @@
+/* font ----------------- */
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: Pretendard-Regular;
+}
+
+
+/* reset --------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+input,
+button {
+  border: none;
+}
+
+input,
+button {
+  background: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
+/* 공통 ------------------ */
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background: #A5B6EE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 70px;
+}
+
+
+/* main ---------------- */
+.timer {
+  width: 400px;
+  padding: 48px 0 40px;
+  background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.division {
+  width: 312px;
+  border-top: 1px solid #3d538a;
+  margin: 23px auto 33px;
+}
+
+.timer-input {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.timer-input fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset::after {
+  background: url(./img/dot.png) no-repeat 0 0 / center
+}
+
+.timer-input label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A5B6EE;
+}
+
+.timer-input input {
+  width: 80px;
+  padding: 16px 14px;
+  border: 1px solid #354971;
+  border-radius: 4px;
+  background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin: 4px 0 40px;
+}
+
+
+
+.timer-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timer-button {
+  display: flex;
+  gap: 6px;
+  padding: 16px 23px 15px 27px;
+  background-color: #324577;
+  color: #617199;
+  border-radius: 50px;
+}
+
+/* footer -------------- */
+
+cite {
+  font-size: 14px;
+  font-style: normal;
+  color: #8596BF;
+}
