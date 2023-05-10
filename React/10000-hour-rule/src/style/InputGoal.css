@@ -1,0 +1,32 @@
+.inputGoal {
+  padding: 102px 0 147px;
+}
+
+.goal {
+  font-size: 24px;
+  color: #fff;
+}
+
+input {
+  width: 228px;
+  font-size: 24px;
+  border-radius: 7px;
+  padding: 17px 0 16px;
+  margin: 0 17px 27px;
+}
+
+input::placeholder {
+  color: #BABCBE;
+}
+
+.btnSubmit {
+  font-family: 'GmarketSansBold';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #5B2386;
+  border: none;
+  border-radius: 56px;
+  background-color: #FCEE21;
+  padding: 21px 49px;
+}

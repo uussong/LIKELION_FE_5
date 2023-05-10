@@ -1,0 +1,19 @@
+.subTitle {
+  display: inline-block;
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 36px;
+  font-weight: 700;
+  color: #F5DF4D;
+  margin-bottom: 78px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #fff;
+}
+
+.desc strong {
+  font-family: 'GmarketSansBold';
+  font-size: 24px;
+  font-weight: bold;
+}

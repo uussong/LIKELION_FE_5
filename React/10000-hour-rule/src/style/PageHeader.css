@@ -1,0 +1,10 @@
+
+.title {
+  background: url(../img/clock.png) no-repeat  center;
+  padding: 194px 0 125px;
+}
+
+.title img {
+  width: 564px;
+  height: 112px;
+}
