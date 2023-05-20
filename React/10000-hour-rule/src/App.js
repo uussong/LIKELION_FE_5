@@ -5,15 +5,18 @@ import DisplayGoal from "./Components/Main/DisplayGoal";
 import PageFooter from "./Components/Footer/PageFooter";
 import './style/reset.css'
 import './style/10000hours.css'
+import { useState } from "react";
 
 function App() {
+  const [data, setData] = useState(null)
+  console.log('data', data)
   return (
     <>
       <PageHeader />
       <main>
         <PageDesc />
-        <InputGoal />
-        <DisplayGoal />
+        <InputGoal setData={setData} />
+        {data && <DisplayGoal data={data} />}
       </main>
       <PageFooter />
     </>
