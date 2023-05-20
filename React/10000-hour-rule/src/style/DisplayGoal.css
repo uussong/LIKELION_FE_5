@@ -1,7 +1,14 @@
+.goal strong {
+  font-family: 'GmarketSansBold';
+  font-size: 72px;
+  vertical-align: middle;
+}
+
 .btnGroup {
-  padding: 127px 0 136px;
+  padding: 0 0 136px;
 }
 
 .btnLink {
   background-color: #fff;
+  margin-left: 12px;
 }
