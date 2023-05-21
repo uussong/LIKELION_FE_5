@@ -9,18 +9,26 @@ import { useState } from "react";
 import Modal from "./Components/Modal/Modal";
 
 function App() {
-  const [data, setData] = useState(null)
-  console.log('data', data)
+  const [data, setData] = useState()
+  const [showModal, setShowModal] = useState()
+
+  function closeModal() {
+    setShowModal(false)
+  }
+  
+  function openModal() {
+    setShowModal(true)
+  }
   return (
     <>
       <PageHeader />
       <main>
         <PageDesc />
         <InputGoal setData={setData} />
-        {data && <DisplayGoal data={data} />}
+        {data && <DisplayGoal data={data} openModal={openModal} />}
       </main>
       <PageFooter />
-      <Modal />
+      {showModal && <Modal closeModal={closeModal} />}
     </>
   );
 }
