@@ -6,6 +6,7 @@ import PageFooter from "./Components/Footer/PageFooter";
 import './style/reset.css'
 import './style/10000hours.css'
 import { useState } from "react";
+import Modal from "./Components/Modal/Modal";
 
 function App() {
   const [data, setData] = useState(null)
@@ -19,6 +20,7 @@ function App() {
         {data && <DisplayGoal data={data} />}
       </main>
       <PageFooter />
+      <Modal />
     </>
   );
 }
