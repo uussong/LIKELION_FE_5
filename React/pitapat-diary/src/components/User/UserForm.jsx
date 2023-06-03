@@ -19,7 +19,7 @@ export default function UserForm() {
   const onSubmit = e => {
     e.preventDefault()
     setUser(username)
-    goDiary()
+    username && goDiary()
   }
   return (
     <main>
