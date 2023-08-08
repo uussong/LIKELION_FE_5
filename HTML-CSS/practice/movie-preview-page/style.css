@@ -142,6 +142,27 @@ header h1 {
   background: url(./img/icon-play.svg) no-repeat 0 50% / 1em;
 }
 
+/* layout */
+section {
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 40px 30px 30px;
+  width: 1060px;
+  margin: 86px auto 135px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 24px 23px;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 28px;
+}
+
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
